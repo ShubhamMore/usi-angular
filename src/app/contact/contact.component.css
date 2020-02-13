@@ -1,0 +1,46 @@
+.map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
+.map-content {
+  width: 200px;
+}
+
+.whatsapp-btn:link,
+.whatsapp-btn:visited {
+  display: inline-block;
+  margin-bottom: 25px;
+  background-color: hsla(209, 68%, 22%, 0.9);
+  padding: 10px 30px;
+  font-weight: 300;
+  font-size: 100%;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s, font-size 0.2s, color 0.2s;
+}
+
+.whatsapp-btn:hover,
+.whatsapp-btn:active {
+  transform: scale(1.1);
+}
+
+.mail,
+.phome {
+  padding: 5px 0;
+}
+
+.whatsapp-btn:hover .fa-whatsapp {
+  font-size: 130%;
+  color: #32bb46;
+}
+
+.address-heading {
+  text-align: center;
+}
+
+.address .content,
+.mail .content,
+.phone .content {
+  text-align: left;
+}
