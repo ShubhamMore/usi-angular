@@ -1,5 +1,6 @@
 .usi-text-box {
   position: absolute;
+  text-align: center;
   width: 1140px;
   top: 50%;
   left: 50%;
@@ -7,10 +8,47 @@
   transform: translate(-50%, -50%);
 }
 
-.contact-btn:link,
-.contact-btn:visited {
+.heading-primary {
+  backface-visibility: hidden;
+  margin-bottom: 50px;
+}
+
+.heading-primary-main {
+  letter-spacing: 5px;
+  animation: moveInLeft 1s ease-out;
+}
+
+.heading-primary-sub {
+  letter-spacing: 3px;
+  animation: moveInRight 1s ease-out;
+}
+
+.heading-contact-btn-animated {
+  animation: moveInBottom 1s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.heading-contact-btn:link,
+.heading-contact-btn:visited {
+  background-color: transparent;
+  text-transform: uppercase;
   border: 1px solid #fff;
+  font-weight: 300;
+  border-radius: 100px;
   color: #fff;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.heading-contact-btn:hover {
+  /* transform: scale(1.1); */
+  transform: translateY(-3px);
+  background-color: hsla(209, 68%, 22%, 0.9);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.heading-contact-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 /* LOGO */
@@ -21,6 +59,7 @@
   width: auto;
   float: left;
   cursor: pointer;
+  animation: fadeIn 1s ease-out;
 }
 
 /* MAIN NAV BAR */
@@ -29,6 +68,7 @@
   margin-top: 55px;
   float: right;
   list-style: none;
+  animation: moveInTop 1s ease-out;
 }
 
 .main-nav li {
@@ -59,6 +99,7 @@
   margin-top: 30px;
   cursor: pointer;
   display: none;
+  animation: moveInTop 1s ease-out;
 }
 
 .mobile-nan-icon i {
@@ -101,6 +142,60 @@
   height: 50px;
   margin: 5px 0;
   width: auto;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ANIMATIONS */
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Big tablets to 1200px (Width smaller that the 1140px row) */

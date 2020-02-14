@@ -161,19 +161,14 @@ h4 {
 .btn-default:link,
 .btn-default:visited {
   display: inline-block;
-  background-color: transparent;
   padding: 10px 30px;
-  font-weight: 300;
-  color: #fff;
   text-decoration: none;
-  transition: transform 0.2s, background-color 0.2s;
 }
 
-.btn-default:hover,
+/* .btn-default:hover,
 .btn-default:active {
-  transform: scale(1.1);
-  background-color: hsla(209, 68%, 22%, 0.9);
-}
+
+} */
 
 /* SECTION CONTENT */
 
