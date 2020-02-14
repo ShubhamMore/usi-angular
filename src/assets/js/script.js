@@ -39,4 +39,25 @@ $(document).ready(function() {
       icon.removeClass('fa-close');
     }
   });
+
+  $('.js--nav-link').click(function() {
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon i');
+    nav.slideToggle(200);
+    if (icon.hasClass('fa-list')) {
+      icon.addClass('fa-close');
+      icon.removeClass('fa-list');
+    } else {
+      icon.addClass('fa-list');
+      icon.removeClass('fa-close');
+    }
+  });
+
+  $('.js--home').click(function() {
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon i');
+    nav.slideUp(200);
+    icon.addClass('fa-list');
+    icon.removeClass('fa-close');
+  });
 });
