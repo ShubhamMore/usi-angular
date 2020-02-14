@@ -90,9 +90,9 @@ header {
       from(rgba(0, 0, 0, 0.8)),
       to(rgba(0, 0, 0, 0.5))
     ),
-    url('./assets/img/community.jpg');
+    url('./assets/img/community-min.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-    url('./assets/img/community.jpg');
+    url('./assets/img/community-min.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -180,6 +180,7 @@ h4 {
 .content {
   font-size: 100%;
   line-height: 150%;
+  text-align: center;
 }
 
 /* SECTION BACKGROUND */
